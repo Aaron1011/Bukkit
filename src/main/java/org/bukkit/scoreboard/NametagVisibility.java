@@ -2,17 +2,25 @@ package org.bukkit.scoreboard;
 
 /**
  * Nametag visiblity for {@link Team}s
- *
- * @since 1.8
  */
 public enum NametagVisibility {
 
+    /**
+     * All nametags are displayed for players on the team
+     */
     ALWAYS("always"),
-
+    /**
+     * No nametags are displayed for players on the team
+     */
     NEVER("never"),
-
+    /**
+     * Only nametags for players on the same team are displayed
+     */
     HIDE_FOR_OTHER_TEAMS("hideForOtherTeams"),
 
+    /**
+     * Only nametags for players on other teams are displayed
+     */
     HIDE_FOR_OWN_TEAM("hideForOwnTeam");
 
 
