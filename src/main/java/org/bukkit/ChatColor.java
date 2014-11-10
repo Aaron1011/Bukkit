@@ -98,7 +98,7 @@ public enum ChatColor {
     /**
      * Resets all previous chat colors or formats.
      */
-    RESET('r', 0x15);
+    RESET('r', -1);
 
     /**
      * The special character which prefixes all chat colour codes. Use this if
@@ -132,6 +132,15 @@ public enum ChatColor {
      */
     public char getChar() {
         return code;
+    }
+
+    /**
+     * Gets the legacy integer value associated with the color.
+     *
+     * @return An integer value of this color code
+     */
+    public int getInteger() {
+        return intCode;
     }
 
     @Override
